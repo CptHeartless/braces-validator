@@ -33,7 +33,7 @@ describe('allSeq()', () => {
     expect(allSeq('{()[]}(({(})]]((([[[)')).toEqual(['{()[]}']);
   });
 
-  test('non-valid sequence insine of the sequence', () => {
+  test('non-valid sequence inside of the sequence', () => {
     expect(allSeq('()][)[})}[()')).toEqual(['()', '()']);
   });
 
