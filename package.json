@@ -1,0 +1,58 @@
+{
+  "name": "braces-validator",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "license": "MIT",
+  "private": true,
+  "author": {
+    "name": "CptHeartless",
+    "url": "https://github.com/CptHeartless"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CptHeartless/braces-validator"
+  },
+  "bin": {
+    "braces-validator": "./bin/index.js"
+  },
+  "scripts": {
+    "braces-validator": "node ./bin",
+    "eslint": "eslint ./ --color --ext .js",
+    "eslint-fix": "yarn eslint --fix",
+    "test": "jest"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "6.1.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "jest": "^24.9.0",
+    "prettier": "1.18.2"
+  },
+  "jest": {
+    "rootDir": "./",
+    "verbose": true,
+    "testMatch": [
+      "**/?(*.)(spec).js"
+    ],
+    "moduleDirectories": [
+      "node_modules"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  }
+}
