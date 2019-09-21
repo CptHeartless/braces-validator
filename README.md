@@ -20,7 +20,7 @@ yarn add git+ssh://git@github.com/CptHeartless/braces-validator.git#v1.0.1
 Or `npm`
 
 ```bash
-npm install ggit+ssh://git@github.com/CptHeartless/braces-validator.git#v1.0.1
+npm install git+ssh://git@github.com/CptHeartless/braces-validator.git#v1.0.1
 ```
 
 ## Running from command line
