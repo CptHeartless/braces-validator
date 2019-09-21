@@ -14,13 +14,13 @@
 Install braces-validator using `yarn`:
 
 ```bash
-yarn add git@github.com:CptHeartless/braces-validator.git#v1.0.0
+yarn add git+ssh://git@github.com/CptHeartless/braces-validator.git#v1.0.1
 ```
 
 Or `npm`
 
 ```bash
-npm install git@github.com:CptHeartless/braces-validator.git#v1.0.0
+npm install ggit+ssh://git@github.com/CptHeartless/braces-validator.git#v1.0.1
 ```
 
 ## Running from command line
