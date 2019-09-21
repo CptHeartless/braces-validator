@@ -1,6 +1,10 @@
 const { allSeq } = require('../../src');
 
 describe('allSeq()', () => {
+  test('valid sequence', () => {
+    expect(allSeq('(()[[]{}[]]())')).toEqual(['(()[[]{}[]]())']);
+  });
+
   test('only open braces', () => {
     expect(allSeq('({[')).toEqual([]);
   });
@@ -57,5 +61,14 @@ describe('allSeq()', () => {
       '[]',
     ]);
     expect(allSeq('][]}<><)(>()][(][]][]{]]||][|])>][<((')).toEqual(['[]', '()', '[]', '[]']);
+  });
+
+  it('should throw an error on types that are not a string', () => {
+    expect(() => allSeq(null)).toThrow('Expected string instead of object');
+    expect(() => allSeq(undefined)).toThrow('Expected string instead of undefined');
+    expect(() => allSeq({})).toThrow('Expected string instead of object');
+    expect(() => allSeq([])).toThrow('Expected string instead of object');
+    expect(() => allSeq(42)).toThrow('Expected string instead of number');
+    expect(() => allSeq(true)).toThrow('Expected string instead of boolean');
   });
 });

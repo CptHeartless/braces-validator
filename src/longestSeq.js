@@ -4,6 +4,7 @@ const { allSeq } = require('./allSeq');
 
 /**
  * Returns longest validity sequence of braces from provided string.
+ * It will return an empty string if that is not found any valid sequence.
  * Valid braces - {}, [], ().
  *
  * @example

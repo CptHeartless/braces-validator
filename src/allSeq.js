@@ -19,16 +19,20 @@ const popIndexesFromStack = stack => {
 /**
  * Returns array of validity sequences of braces on that
  * each open brace har their own close, from provided string.
+ * It will return an empty array if sequences have not been founded.
  * Valid braces - {}, [], ().
  *
  * @example
  * // returns ['(([]{()}))', '()[]{}']
  * allSeq('(]((])(([]{()}))](()[]{}((')
  *
+ * @throws Will throw an error if the provided argument is not a string.
  * @param {string} sequence - Text with any sequence of braces.
  * @returns {Array<string>} - Array of validity sequences of braces.
  */
 const allSeq = sequence => {
+  if (typeof sequence !== 'string')
+    throw new Error(`Expected string instead of ${typeof sequence}`);
   const stack = new Utils.Stack();
   const tags = Array.from(sequence);
   const holes = [];
