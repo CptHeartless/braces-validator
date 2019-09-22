@@ -19,7 +19,7 @@ const splitStringAtIndexes = (string, indexes) =>
   }, []);
 
 /**
- * Finds longest string in the provided array of string.
+ * Finds longest string in the provided array of strings.
  *
  * @param {Array<string>} strings - Array of strings.
  * @returns {string} - Longest string.
