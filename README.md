@@ -14,13 +14,13 @@
 Install braces-validator using `yarn`:
 
 ```bash
-yarn add git+ssh://git@github.com/CptHeartless/braces-validator.git#v1.0.2
+yarn add git+ssh://git@github.com/CptHeartless/braces-validator.git#v1.0.3
 ```
 
 Or `npm`
 
 ```bash
-npm install git+ssh://git@github.com/CptHeartless/braces-validator.git#v1.0.2
+npm install git+ssh://git@github.com/CptHeartless/braces-validator.git#v1.0.3
 ```
 
 ## Running from command line
@@ -36,7 +36,7 @@ braces-validator help
 ## Using as git node module
 
 ```javascript
-const { allSeq, longestSeq, sanitize } = require('brace-validator');
+const { allSeq, longestSeq, sanitize } = require('braces-validator');
 
 // Removes all not allowed chars from the provided string.
 sanitize('{}()[]<>\r\n'); // '{}()[]'
