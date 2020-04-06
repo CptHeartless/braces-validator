@@ -22,7 +22,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "minimist": "^1.2.2"
+    "minimist": "^1.2.3"
   },
   "devDependencies": {
     "eslint": "6.1.0",
